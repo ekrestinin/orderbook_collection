@@ -1,0 +1,30 @@
+[package]
+edition = "2021"
+name = "orderbook_collection"
+version = "0.1.0"
+
+[[bin]]
+name = "orderbook_collection"
+path = "src/main.rs"
+
+[lib]
+name = "orderbook_collection_lib"
+path = "src/lib.rs"
+
+[[bench]]
+harness = false
+name = "orderbook_collection_benchmark"
+path = "src/benchmark.rs"
+
+[dependencies]
+anyhow = "1"
+config = "0.15"
+criterion = "0.5"
+ctor = "0.4"
+dotenvy = "0.15"
+serde = {version = "1.0", features = ["derive"]}
+structopt = "0.3"
+thiserror = "2"
+tracing = {version = "0.1", features = ["log"]}
+tracing-log = "0.2"
+tracing-subscriber = {version = "0.3", features = ["std", "registry", "env-filter", "fmt", "json"]}

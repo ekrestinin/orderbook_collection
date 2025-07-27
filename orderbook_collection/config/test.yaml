@@ -1,0 +1,12 @@
+instruments:
+  1:
+    id: 1
+    min_price: 4000.0
+    max_price: 7000.0
+    tick_size: 0.01
+  2:
+    id: 2
+    min_price: 599000.0
+    max_price: 602000.0
+    tick_size: 0.01
+incremental_buffer_size: 1024
